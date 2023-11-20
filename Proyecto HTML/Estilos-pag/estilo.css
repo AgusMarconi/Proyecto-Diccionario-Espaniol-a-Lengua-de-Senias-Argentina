@@ -1,0 +1,106 @@
+
+h1 {
+    background-color: transparent;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 25px;
+}
+#logo_pagina {
+    float: right;
+    width: 120px;
+}
+.titulo_principal{
+    background-color: #0035a7;
+    width: 100%;
+    padding-top:  20px; ;
+    padding-bottom: 20px;
+}
+.titulo_principal a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.buscador{
+    background-color: #fcfcfc;
+    height: inherit;
+    width: 40%;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 30px;
+    padding-left: 15px;
+    border: 2px solid #cad3dc;
+    box-shadow: rgba(255, 255, 255, 0.5) -2px -2px 5px,
+                rgba(0, 0, 0, 0.1) 2px 2px 2px,
+                rgba(255, 255, 255, 0.5) -2px -2px px,
+                rgba(0, 0, 0, 0.1) 2px 2px 2px;
+    display: flex;
+}
+#buscar_palabra{
+    background: transparent;
+    width: 85%;
+    font-weight: bold;
+    font: inherit;
+    background-size: auto;
+    outline: none;
+}
+.encabezado{
+    background-color: cyan;
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+.boton1{
+    cursor: pointer;
+    background: transparent;
+    width: 40px;
+}
+.boton1 > img{
+    width: 40px;
+}
+.opciones{
+    position: absolute;
+    right: 0%;
+    width: 150px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.rueda{
+    width: 50px;
+    height: 50px;
+}
+.checkbtn{
+    height: inherit;
+    cursor: pointer;
+}
+.checkbtn img{
+    width: 50px;
+}
+.lista li, .lista li a{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: rgba(245, 249, 255, 0.849)
+}
+.lista > li{
+    display: none;
+    list-style: none;
+    width: 100%;
+    color: rgb(0, 2, 95);
+    font-size: calc(100% + 12px);
+    background-color: rgba(99, 102, 255, 0.05);
+}
+.opciones:hover .lista li{
+    display: block;
+    justify-content: space-between;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
