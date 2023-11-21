@@ -84,7 +84,7 @@ h1 {
     list-style: none;
 }
 body{
-    background-color: rgba(245, 249, 255, 0.849)
+    background-color: rgb(245, 249, 255);
 }
 .lista > li{
     display: none;

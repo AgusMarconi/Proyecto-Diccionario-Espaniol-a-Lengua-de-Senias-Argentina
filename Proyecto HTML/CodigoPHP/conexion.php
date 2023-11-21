@@ -3,17 +3,17 @@
 class conexion{
     private $servidor="localhost";
     private $usuario="root";
-    private $contrasenia="";
+    private $contrasenia="micontra";
     private $conection;
 
     public function __construct(){
         try{
 
-            $this->conection=new PDO("mysql:host=".$this->servidor.";dbname=diccionario", $this->usuario, $this->contrasenia);
+            $this->conection=new PDO("mysql:host=localhost;port=3307;dbname=diccionario", $this->usuario, $this->contrasenia);
             $this->conection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
         }catch (PDOException $PE){
-            echo "Errorde Conexión: No pudo conectarse.";
+            echo "Errorde Conexión: No pudo conectarse. ".$PE->getMessage();
         }
     }
 
